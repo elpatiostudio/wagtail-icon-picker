@@ -9,7 +9,7 @@ This panel uses the native `<input type="text"...` text input. You use it by add
 #### How to use
 
 ```python
-from wagtail.core.models import Page
+from wagtail.models import Page
 from wagtail_icon_picker.edit_handlers import BoxiconsPickerPanel
 
 class MyPage(Page):
@@ -30,7 +30,7 @@ A field based on CharField , its built to be compatible with `<input type="text"
 #### How to use
 
 ```python
-from wagtail.core.models import Page
+from wagtail.models import Page
 from wagtail_icon_picker.fields import IconField
 
 class MyPage(Page):
@@ -47,8 +47,8 @@ This block uses the native `<input type="text"...` text input. You use it by add
 #### How to use
 
 ```python
-from wagtail.core.models import Page
-from wagtail.core.fields import StreamField
+from wagtail.models import Page
+from wagtail.fields import StreamField
 from wagtail_icon_picker.blocks import IcofontPickerBlock
 
 

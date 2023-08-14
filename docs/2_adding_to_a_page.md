@@ -3,7 +3,7 @@
 ### First create a page
 
 ```python
-from wagtail.core.models import Page
+from wagtail.models import Page
 
 class MyPage(Page):
     ...
@@ -15,7 +15,7 @@ class MyPage(Page):
 Define a IconField that represents your icon type, in this example we call it `icon`.
 
 ```python
-from wagtail.core.models import Page
+from wagtail.models import Page
 from wagtail_icon_picker.fields import IconField
 
 class MyPage(Page):
@@ -28,7 +28,7 @@ Note: IconField is built on top of CharField, so its also possible to use `CharF
 ### Add a content panel to represent the field in the admin
 
 ```python
-from wagtail.core.models import Page
+from wagtail.models import Page
 from wagtail_icon_picker.edit_handlers import BoxiconsPickerPanel
 
 
@@ -46,7 +46,7 @@ We're done! After migration an icon picker should appear.
 ### Full example
 
 ```python
-from wagtail.core.models import Page
+from wagtail.models import Page
 
 from wagtail_icon_picker.fields import IconField
 from wagtail_icon_picker.edit_handlers import BoxiconsPickerPanel

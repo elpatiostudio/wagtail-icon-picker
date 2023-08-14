@@ -3,8 +3,8 @@
 To add the icon chooser to a StreamField, import and use the `IcofontPickerBlock`.
 
 ```python
-from wagtail.core.models import Page
-from wagtail.core.fields import StreamField
+from wagtail.models import Page
+from wagtail.fields import StreamField
 from wagtail_icon_picker.blocks import IcofontPickerBlock
 
 

@@ -16,7 +16,7 @@ Introducing panels for selecting icons in Wagtail.
 ## Example
 
 ```python
-from wagtail.core.models import Page
+from wagtail.models import Page
 
 from wagtail_icon_picker.fields import IconField
 from wagtail_icon_picker.edit_handlers import IcofontIconPickerPanel

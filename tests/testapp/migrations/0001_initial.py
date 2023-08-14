@@ -2,7 +2,7 @@
 
 from django.db import migrations, models
 import django.db.models.deletion
-import wagtail.core.fields
+import wagtail.fields
 import wagtail_color_panel.blocks
 import wagtail_color_panel.fields
 
@@ -53,7 +53,7 @@ class Migration(migrations.Migration):
             name='PageWithStreamfield',
             fields=[
                 ('page_ptr', models.OneToOneField(auto_created=True, on_delete=django.db.models.deletion.CASCADE, parent_link=True, primary_key=True, serialize=False, to='wagtailcore.Page')),
-                ('body', wagtail.core.fields.StreamField([('color', wagtail_color_panel.blocks.NativeColorBlock())])),
+                ('body', wagtail.fields.StreamField([('color', wagtail_color_panel.blocks.NativeColorBlock())])),
             ],
             options={
                 'abstract': False,
